@@ -1,0 +1,28 @@
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.subdiv form{
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-around; */
+    /* border: 2px solid green; */
+
+}
+#a1{
+    /* border: 2px solid red; */
+    /* margin-top: 100vh; */
+    /* padding-right: 2%; */
+}
+#p-age{
+    /* border: 2px solid blue; */
+    /* margin-left:  20%; */
+}
+#result{
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 30%;
+
+}

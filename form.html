@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">
+        <div class="subdiv">
+            <form>
+                <ul style="display: flex;justify-content: space-between; font-size:larger"><li style="list-style: none;">
+                <label for="person-age" id="a1">Age</label></li><li style="list-style: none;">
+                <input type="text" id="p-age" name="p-age" placeholder="Enter Age"></li></ul><ul style="display: flex;"><li style="list-style: none;font-size: larger;">
+                <label for="person-weight">Weight</label>
+                <input type="text" id="p-weight" name="p-weight" placeholder="Enter weight"><br></li>
+                </ul>
+                <input type="button" value="Submit" onclick="bmi()" style="margin-left: 35%;font-size: larger;">
+                
+            </form>
+            <p id="result"></p>
+
+        </div>
+        <!-- <p id="result"></p> -->
+    </div>
+
+   
+    <script>
+          
+          function bmi(){
+            i=document.getElementById('p-age').value;
+          j=document.getElementById('p-weight').value;
+          k="Keep it up!";
+          g=k.fontcolor("green");
+          l="You are Overweight";
+          o=l.fontcolor("red");
+          m="You are Underweight";
+          u=m.fontcolor("red");
+              if(i>=5&&i<=7){
+                  if(j>=15&&j<=20)
+                  document.getElementById('result').innerHTML=
+                  g;
+                  else{
+                      if(j>20)
+                    document.getElementById('result').innerHTML=
+                  o;
+                  else
+                  document.getElementById('result').innerHTML=
+                  u;
+                  }
+                  
+              }
+              if(i>=8&&i<=10){
+                  if(j>=21&&j<=25)
+                  document.getElementById('result').innerHTML=
+                  g;
+                  else{
+                      if(j>25)
+                    document.getElementById('result').innerHTML=
+                  o;
+                  else
+                  document.getElementById('result').innerHTML=
+                  u;
+                  }
+                  
+              }
+              if(i>=11&&i<=15){
+                  if(j>=26&&j<=30)
+                  document.getElementById('result').innerHTML=
+                  g;
+                  else{
+                      if(j>30)
+                    document.getElementById('result').innerHTML=
+                  o;
+                  else
+                  document.getElementById('result').innerHTML=
+                  u;
+                  }
+                  
+              }
+              if(i>=16&&i<=20){
+                  if(j>=31&&j<=40)
+                  document.getElementById('result').innerHTML=
+                  g;
+                  else{
+                      if(j>40)
+                    document.getElementById('result').innerHTML=
+                  o;
+                  else
+                  document.getElementById('result').innerHTML=
+                  u;
+                  }
+                }
+}
+
+      </script>
+</body>
+</html>
