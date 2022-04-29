@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div-main">
+        <table id="t-id">
+            <tr>
+                <th>
+                    Company
+                </td>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Memory(GB)
+                </td>
+                <th>
+                    Price(RS)
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="div1">
+        <select name="s1" id="s1">
+            <option value="-select field">-Select Field-</option>
+            <option value="0">Company</option>
+            <option value="1">Model</option>
+            <option value="2">Memory</option>
+            <option value="3">Price</option>
+        </select>
+        <input type="text" id="evalue">
+        <input type="button" value="Search" id="srch" onclick="search()">
+    </div>
+    <div class="div-main">
+        <table id="t1-id">
+            <tr>
+                <th>
+                    Company
+                </td>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Memory(GB)
+                </td>
+                <th>
+                    Price(RS)
+                </th>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="div2">
+        <select name="s2" id="s2">
+            <option value="-select field">-Select Field-</option>
+            <option value="0">Company</option>
+            <option value="1">Model</option>
+            <option value="2">Memory</option>
+            <option value="3">Price</option>
+        </select>
+        <select name="s3" id="s3" onchange="selection()">
+            <option value="sorder">-select order-</option>
+            <option value="0">Descending</option>
+            <option value="1">Ascending</option>
+        </select>
+    </div>
+    <div class="div-main">
+        <table id="t2-id">
+            <tr>
+                <th>
+                    Company
+                </td>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Memory(GB)
+                </td>
+                <th>
+                    Price(RS)
+                </th>
+            </tr>
+        </table>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>

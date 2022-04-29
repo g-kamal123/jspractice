@@ -1,0 +1,47 @@
+.div-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-main table{
+    margin-top: 20px;
+    /* margin-left: 100px; */
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+.div-main table th{
+    margin: 4px;
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+}
+td{
+    padding: 10px;
+    font-size: larger;
+
+}
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+input{
+    font-size: larger;
+    margin: 2%;
+}
+select{
+    font-size: larger;
+    margin: 1%;
+}
+option{
+    font-size: larger;
+}
