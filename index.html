@@ -87,7 +87,116 @@
                 </th>
             </tr>
         </table>
-    </div>  
+    </div>
+    <div class="div-main">
+        <table id="t1-id">
+            <tr>
+                <th>
+                    Company
+                </th>
+                <td>
+                    <input type="text" id="cname">
+                </td>
+            </tr>
+            <tr>   
+                <th>
+                    Model
+                </th>
+                <td>
+                    <input type="text" id="mname">
+                </td>
+            </tr>
+            <tr></tr>   
+                <th>
+                    Memory(GB)
+                </th>
+                <td>
+                    <input type="text" id="memory">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Price(RS)
+                </th>
+                <td>
+                    <input type="text" id="price">
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="Add" onclick="add_product()">
+    </div>
+    <div class="div-main">
+        <table id="t4-id">
+            <tr>
+                <th>
+                    Company
+                </th>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Memory(GB)
+                </th>
+                <th>
+                    Price(RS)
+                </th>
+            </tr>
+        </table>   
+    </div>
+    <div class="div-2">
+        <select name="s5" id="s5">
+            <option value="-select field">-Select Field-</option>
+            <option value="0">Samsung</option>
+            <option value="1">Nokia</option>
+            <option value="2">Xiaomi</option>
+            <option value="3">Motorola</option>
+            <option value="4">Apple</option>
+        </select>
+        <input type="text" placeholder="Enter Quantity" id="quantity">
+        <input type="button" value="Add" onclick="add_your_product()">
+        <input type="button" value="Generate" onclick="generate_bill()">
+    </div> 
+    <div class="div-main">
+        <table id="t5-id">
+            <tr>
+                <th>
+                    Bill
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Description
+                </td>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    Amount
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="div-main">
+        <table id="t7-id">
+            <tr>
+                <th>
+                    Company
+                </th>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Memory(GB)
+                </th>
+                <th>
+                    Price(RS)
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
