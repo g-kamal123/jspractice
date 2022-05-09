@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">
+        <p>
+            <input type="text" id="txt">
+        </p>
+    </div>
+    <div class="div2">
+        <p>
+            <button id="sum" onclick="add()">+</button>
+            <button id="minus" onclick="subtract()">-</button>
+            <button id="multiplication" onclick="mul()">*</button>
+            <br>
+            <button id="divide" onclick="div()">/</button>
+            <button id="total" onclick="totals()">=</button>
+        </p>
+        <p>
+           <button id="0" onclick="change(this.id)">0</button>
+           <button id="1" onclick="change(this.id)">1</button>
+           <button id="2" onclick="change(this.id)">2</button>
+           <br>
+           <button id="3" onclick="change(this.id)">3</button>
+           <button id="4" onclick="change(this.id)">4</button>
+           <button id="5" onclick="change(this.id)">5</button>
+           <br>
+           <button id="6" onclick="change(this.id)">6</button>
+           <button id="7" onclick="change(this.id)">7</button>
+           <button id="8" onclick="change(this.id)">8</button>
+           <br>
+           <button id="9" onclick="change(this.id)">9</button>
+           <button id="rest" onclick="reset()">Reset</button>
+        </p>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

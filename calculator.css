@@ -1,0 +1,15 @@
+.div1 p input{
+    line-height: 25px;
+    text-align: right;
+    margin-left: 2%;
+}
+.div2 p{
+    /* border: 1px solid red; */
+    width:80vw ;
+}
+.div2 p button{
+    margin-left: 2%;
+    height: 40px;
+    width: 50px;
+    margin-top: 2%;
+}
