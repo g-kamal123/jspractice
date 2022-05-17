@@ -1,202 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="div-main">
-        <table id="t-id">
+<html>
+    <head>
+        <style>
+            #main{
+                height: 75vh;
+                width: 60%;
+                margin: auto;
+
+            }
+        </style>
+
+    </head>
+    <body>
+    <div id="main">
+        <div  id="res">
+          <table><tr><th>Company</th><th>Model</th><th>Memory(GB)</th><th>price(Rs)</th><th>Action</th></tr>
             <tr>
-                <th>
-                    Company
-                </td>
-                <th>
-                    Model
-                </th>
-                <th>
-                    Memory(GB)
-                </td>
-                <th>
-                    Price(RS)
-                </th>
-            </tr>
-        </table>
-    </div>
-    <div class="div1">
-        <select name="s1" id="s1">
-            <option value="-select field">-Select Field-</option>
-            <option value="0">Company</option>
-            <option value="1">Model</option>
-            <option value="2">Memory</option>
-            <option value="3">Price</option>
-        </select>
-        <input type="text" id="evalue">
-        <input type="button" value="Search" id="srch" onclick="search()">
-    </div>
-    <div class="div-main">
-        <table id="t1-id">
-            <tr>
-                <th>
-                    Company
-                </td>
-                <th>
-                    Model
-                </th>
-                <th>
-                    Memory(GB)
-                </td>
-                <th>
-                    Price(RS)
-                </th>
-            </tr>
-        </table>
-    </div>
-    
-    <div class="div2">
-        <select name="s2" id="s2">
-            <option value="-select field">-Select Field-</option>
-            <option value="0">Company</option>
-            <option value="1">Model</option>
-            <option value="2">Memory</option>
-            <option value="3">Price</option>
-        </select>
-        <select name="s3" id="s3" onchange="selection()">
-            <option value="sorder">-select order-</option>
-            <option value="0">Descending</option>
-            <option value="1">Ascending</option>
-        </select>
-    </div>
-    <div class="div-main">
-        <table id="t2-id">
-            <tr>
-                <th>
-                    Company
-                </td>
-                <th>
-                    Model
-                </th>
-                <th>
-                    Memory(GB)
-                </td>
-                <th>
-                    Price(RS)
-                </th>
-            </tr>
-        </table>
-    </div>
-    <div class="div-main">
-        <table id="t1-id">
-            <tr>
-                <th>
-                    Company
-                </th>
-                <td>
-                    <input type="text" id="cname">
-                </td>
-            </tr>
-            <tr>   
-                <th>
-                    Model
-                </th>
-                <td>
-                    <input type="text" id="mname">
-                </td>
-            </tr>
-            <tr></tr>   
-                <th>
-                    Memory(GB)
-                </th>
-                <td>
-                    <input type="text" id="memory">
-                </td>
+              <td>Samsung</td>
+              <td>Galaxy</td>
+              <td>64</td>
+              <td>15000</td>
+               <td> <input type="checkbox" id="Samsung"></td>
             </tr>
             <tr>
-                <th>
-                    Price(RS)
-                </th>
-                <td>
-                    <input type="text" id="price">
-                </td>
-            </tr>
-        </table>
-        <input type="button" value="Add" onclick="add_product()">
-    </div>
-    <div class="div-main">
-        <table id="t4-id">
-            <tr>
-                <th>
-                    Company
-                </th>
-                <th>
-                    Model
-                </th>
-                <th>
-                    Memory(GB)
-                </th>
-                <th>
-                    Price(RS)
-                </th>
-            </tr>
-        </table>   
-    </div>
-    <div class="div-2">
-        <select name="s5" id="s5">
-            <option value="-select field">-Select Field-</option>
-            <option value="0">Samsung</option>
-            <option value="1">Nokia</option>
-            <option value="2">Xiaomi</option>
-            <option value="3">Motorola</option>
-            <option value="4">Apple</option>
-        </select>
-        <input type="text" placeholder="Enter Quantity" id="quantity">
-        <input type="button" value="Add" onclick="add_your_product()">
-        <input type="button" value="Generate" onclick="generate_bill()">
-    </div> 
-    <div class="div-main">
-        <table id="t5-id">
-            <tr>
-                <th>
-                    Bill
-                </th>
+              <td>Nokia</td>
+              <td>S730</td>
+              <td>128</td>
+              <td>22000</td>
+               <td><input type="checkbox" id="Nokia"></td>
             </tr>
             <tr>
-                <th>
-                    Description
-                </td>
-                <th>
-                    Quantity
-                </th>
-                <th>
-                    Amount
-                </th>
+              <td>Xiaomi</td>
+              <td>Note</td>
+              <td>32</td>
+              <td>12000</td>
+               <td><input type="checkbox" id="Xiaomi"></td>
             </tr>
-        </table>
-    </div>
-    <div class="div-main">
-        <table id="t7-id">
             <tr>
-                <th>
-                    Company
-                </th>
-                <th>
-                    Model
-                </th>
-                <th>
-                    Memory(GB)
-                </th>
-                <th>
-                    Price(RS)
-                </th>
-                <th>
-                    Action
-                </th>
+              <td>Motorola</td>
+              <td>G10</td>
+              <td>32</td>
+              <td>15000</td>
+               <td> <input type="checkbox" id="Motorola"></td>
             </tr>
-        </table>
+            <tr>
+              <td>Apple</td>
+              <td>S12</td>
+              <td>64</td>
+              <td>25000</td>
+               <td> <input type="checkbox" id="Apple"></td>
+            </tr>
+
+           <tr><td></td><td></td><td></td><td></td><td> <button type="submit" onclick="check()";>Delete</button></td></tr>
+        </div>
+
+        <br><br><br><br>
+        <div id="show">
+
+        </div>
+        <div id="final"></div>
     </div>
-    <script src="script.js"></script>
-</body>
+
+
+
+
+     <script>
+
+
+         const Arr =[{
+           Company:"Samsung",
+           Model:"Galaxy",
+           Memory:64,
+           Price:15000
+         },{
+           Company:"Nokia",
+           Model:"S730",
+           Memory:128,
+           Price:22000
+         },
+         {
+           Company:"Xiaomi",
+           Model:"Note",
+           Memory:32,
+           Price:12000
+         },
+         {
+           Company:"Motorola",
+           Model:"G10",
+           Memory:32,
+           Price:15000
+         },
+         {
+           Company:"Apple",
+           Model:"S12",
+           Memory:64,
+           Price:25000
+         }];
+         function check(){
+           var arr= [];
+          if (!document.getElementById('Samsung').checked) {
+             arr.push(Arr[0]);
+           }
+           if (!document.getElementById('Nokia').checked) {
+             arr.push(Arr[1]);
+           }
+           if (!document.getElementById('Xiaomi').checked) {
+             arr.push(Arr[2]);
+           }
+           if (!document.getElementById('Motorola').checked) {
+             arr.push(Arr[3]);
+           }
+           if (!document.getElementById('Apple').checked) {
+             arr.push(Arr[4]);
+           }
+
+           let text="<table><tr><th>Company</th><th>Model</th><th>Memory(GB)</th><th>price(Rs)</th><th>Action</th></tr><br><br><br><br>";
+          for(let i=0;i<arr.length;i++)
+            text+="<tr><td>"+arr[i].Company+"</td><td>"+arr[i].Model+"</td><td>"+arr[i].Memory+"</td><td>"+ arr[i].Price+"</td></tr>";
+
+            text+="</table>";
+            document.getElementById("res").innerHTML=text;
+           }
+     </script>
+    </body>
 </html>
