@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="tictactoe.css">
 </head>
 <body>
-    <table border="1px" style="height: 20vh; width: 20vw;">
+    <div class="container">
+    <table border="1px" style="height: 20vh; width: 20vw;" class="a">
         <tr>
-            <td id="sign1" onclick="put()"></td>
-            <td id="sign2" onclick="put()"></td>
-            <td id="sign3" onclick="put()"></td>
+            <td id="0" class="td1" value="0"></td>
+            <td id="1" class="td1" value="1"></td>
+            <td id="2" class="td1" value="2"></td>
         </tr>
         <tr>
-            <td id="sign4" onclick="put()"></td>
-            <td id="sign5" onclick="put()"></td>
-            <td id="sign6" onclick="put()"></td>
+            <td id="3" class="td1" value="3"></td>
+            <td id="4" class="td1" value="4"></td>
+            <td id="5" class="td1" value="5"></td>
         </tr>
         <tr>
-            <td id="sign7" onclick="put()"></td>
-            <td id="sign8" onclick="put()"></td>
-            <td id="sign9" onclick="put()"></td>
+            <td id="6" class="td1" value="6"></td>
+            <td id="7" class="td1" value="7"></td>
+            <td id="8" class="td1" value="8"></td>
         </tr>
     </table>
+    <input type="button" value="Reset">
+    <p id="res"></p>
+   </div>
+    <script src="tictactoe.js"></script>
 </body>
 </html>

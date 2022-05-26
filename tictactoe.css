@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center; 
+    justify-content: center;
+}
+input{
+    background-color: rgb(10, 104, 192);
+    color: rgb(247, 245, 245);
+    margin-top: 5%;
+    height: 7%;
+    width: 10%;
+    border-radius: 8%;
+    font-size: 175%;
+}
+table tr{
+    height: 12vh;
+    width: 25vw;
+}
+table tr td{
+    text-align: center;
+    background-color: aquamarine;
+    max-width: 50px;
+    min-width: 50px;
+}
