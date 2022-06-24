@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #main{
+                height: 75vh;
+                width: 60%;
+                margin: auto;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- <table></table> -->
+        <div  id="res"></div>
+        <button type="submit">Delete</button>
+
+
+
+
+     <script>
+        const Arr =[{
+           Company:"Samsung",
+           Model:"Galaxy",
+           Memory:64,
+           Price:15000
+         },
+         {
+           Company:"Nokia",
+           Model:"S730",
+           Memory:128,
+           Price:22000
+         },
+         {
+           Company:"Xiaomi",
+           Model:"Note",
+           Memory:32,
+           Price:12000
+         },
+         {
+           Company:"Motorola",
+           Model:"G10",
+           Memory:32,
+           Price:15000
+         },
+         {
+           Company:"Apple",
+           Model:"S12",
+           Memory:64,
+           Price:25000
+         }];
+
+         printarr();
+
+         function printarr(){
+         text='<table><tr><th>Company</th><th>Model</th><th>Memory(GB)</th><th>price(Rs)</th><th>Action</th></tr>';
+        for(i=0;i<Arr.length;i++){
+          text+= '<tr>';
+          text+= '<td>'+Arr[i].Company+'</td>';
+          text+= '<td>'+Arr[i].Model+'</td>';
+          text+= '<td>'+Arr[i].Memory+'</td>';
+          text+= '<td>'+Arr[i].Price+'</td>';     
+          text+= '<td> <input type="checkbox" class="delete"></td>';
+          text+= '</tr>';
+        }
+        text+= '</table>';
+        document.getElementById('res').innerHTML = text;
+      }
+
+        document.querySelector('button').addEventListener('click',() =>{
+        var chkbox = document.querySelectorAll('.delete');
+        console.table(chkbox);
+          for(i=0;i<chkbox.length;i++){
+            if(chkbox[i].checked){
+              // alert(i);
+              chkbox[i].closest('tr').remove();
+            }
+          }
+          // printarr();
+        });
+     </script>
+    </body>
+</html>
